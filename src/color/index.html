@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Convertisseur de température et visualisateur de couleur RGB">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/outline_analytics_white_24dp.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <title>Mon Super Convertisseur</title>
+</head>
+<body>
+    <header>
+        <img src="img/outline_analytics_white_24dp.png" alt="Logo du site web">
+        <h1>Mon Super Convertisseur</h1>
+        <h2>Convertisseur RBG</h2>
+    </header>
+
+    <div class="converters">
+        <div class="converter">
+            <h3>Convertisseur de couleur</h3>
+            <p>Vous permet de visualiser un couleur codé en RGB</p>
+
+            <form name="color">
+                <label for="rouge">R : </label>
+                <input type="number" name="rouge" id="rouge" >
+
+                <br>
+
+                <label for="vert">G : </label>
+                <input type="number" name="vert" id="vert" >
+
+                <br>
+
+                <label for="bleu">B : </label>
+                <input type="number" name="bleu" id="bleu" >
+
+                <br>
+
+                <input class="convert" type="button" value="Visualiser" onclick="color_convert()">
+
+                <br>
+
+                <div class="result_color" id="result_color"></div>
+            </form>
+        </div>
+
+        <h4>Voir aussi <a href="../temperature/index.html">Le Convertisseur de température</a></h4>
+
+    </div>
+
+    <footer>
+        <p>Par Johan Ledoux • <a href="https://github.com/ldxdev/Website_Converters" target="blank">Code Source sur Github</a> • <a href="https://fonts.google.com/" target="blank"> Google Fonts</a></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
